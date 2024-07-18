@@ -4,7 +4,7 @@
     {
         public string Name { get; set; }
         public string Location { get; set; }
-        public ICollection<InventoryItem> InventoryItems { get; set; }
+        public ICollection<WarehouseInventoryItem> WarehouseInventoryItems { get; set; }
     }
 
 }

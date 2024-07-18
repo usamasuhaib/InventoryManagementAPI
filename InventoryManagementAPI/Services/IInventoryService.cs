@@ -1,6 +1,7 @@
 ﻿using InventoryManagementAPI.Data;
 using InventoryManagementAPI.DTOs;
 using InventoryManagementAPI.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,7 +11,6 @@ namespace InventoryManagementAPI.Services
     {
         Task<IEnumerable<InventoryItem>> GetInventoryItemsAsync();
         Task<InventoryItem> GetInventoryItemByIdAsync(int id);
-        Task<InventoryItem> CreateInventoryItemAsync(InventoryItem item);
         Task<InventoryItem> UpdateInventoryItemAsync(InventoryItem item);
         Task<bool> DeleteInventoryItemAsync(int id);
         Task<IEnumerable<InventoryItem>> GetInventoryItemsByCategoryAsync(string category);
@@ -57,25 +57,8 @@ namespace InventoryManagementAPI.Services
         }
 
 
-        //public async Task<IEnumerable<InventoryItem>> GetInventoryItemsAsync(string tenantId)
-        //{
-        //    return await _context.InventoryItems.Where(i => i.TenantId == tenantId).ToListAsync();
-
-        //}
 
 
-        //public async Task<IActionResult> GetInventoryItemsAsync()
-        //{
-        //    var tenantId = GetTenantId();
-
-        //    var items = await _context.InventoryItems
-        //           .FromSqlRaw(@"SELECT Id, Name, CAST(Price AS decimal(18,2)) AS Price, Quantity, Description, Category, TenantId 
-        //          FROM InventoryItems 
-        //          WHERE TenantId = {0}", tenantId)
-        //           .ToListAsync();
-
-        //    return  items;
-        //}
 
         public async Task<InventoryItem> GetInventoryItemByIdAsync(int id)
         {
@@ -83,13 +66,7 @@ namespace InventoryManagementAPI.Services
             return await _context.InventoryItems.FirstOrDefaultAsync(i => i.Id == id && i.TenantId == tenantId);
         }
 
-        public async Task<InventoryItem> CreateInventoryItemAsync(InventoryItem item)
-        {
-            item.TenantId = GetTenantId();
-            _context.InventoryItems.Add(item);
-            await _context.SaveChangesAsync();
-            return item;
-        }
+
 
         public async Task<InventoryItem> UpdateInventoryItemAsync(InventoryItem item)
         {
@@ -134,5 +111,7 @@ namespace InventoryManagementAPI.Services
             var tenantId = GetTenantId();
             return await _context.InventoryItems.Where(i => i.TenantId == tenantId && i.Name.Contains(name)).ToListAsync();
         }
+
+
     }
 }

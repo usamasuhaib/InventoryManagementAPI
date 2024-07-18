@@ -69,45 +69,69 @@ namespace InventoryManagementAPI.Controllers
             return Ok(item);
         }
 
+
+
+
         [HttpPost("CreateInventoryItem")]
-        public async Task<ActionResult<InventoryItem>> CreateInventoryItem([FromBody] InventoryItemDto inventoryItemDto)
+        public async Task<IActionResult> CreateInventoryItem([FromBody] InventoryItemDto inventoryItemDto)
         {
             if (ModelState.IsValid)
             {
                 var tenantId = Request.Headers["TenantId"].ToString();
 
-                // Map DTO to entity
-                var inventoryItem = new InventoryItem
+                if (string.IsNullOrEmpty(tenantId))
+                {
+                    return BadRequest("Tenant Id is missing");
+                }
+
+                var newItem = new InventoryItem
                 {
                     Name = inventoryItemDto.Name,
-                    Description = inventoryItemDto.Description,
-                    Price = inventoryItemDto.Price,
-                    Quantity = inventoryItemDto.Quantity,
                     Category = inventoryItemDto.Category,
+                    Price = inventoryItemDto.Price,
+                    Description = inventoryItemDto.Description,
+                    Quantity = inventoryItemDto.Quantity,
                     TenantId = tenantId
                 };
 
-                // Add association with warehouses
-                foreach (var warehouseId in inventoryItemDto.WarehouseIds)
+                try
                 {
-                    var warehouse = await _warehouseService.GetWarehouseByIdAsync(warehouseId);
-                    if (warehouse != null)
+                    // Add new item to the context
+                    await _dbContext.InventoryItems.AddAsync(newItem);
+                    await _dbContext.SaveChangesAsync();
+
+                    var warehouse = await _dbContext.Warehouses
+                        .FirstOrDefaultAsync(w => w.Id == inventoryItemDto.wareHouseId && w.TenantId == tenantId);
+
+                    if (warehouse == null)
                     {
-                        inventoryItem.Warehouses.Add(warehouse);
+                        return BadRequest($"Invalid Warehouse Id: {inventoryItemDto.wareHouseId}");
                     }
-                    else
+
+                    var warehouseInventoryItem = new WarehouseInventoryItem
                     {
-                        return NotFound($"Warehouse with ID {warehouseId} not found.");
-                    }
+                        WarehouseId = inventoryItemDto.wareHouseId,
+                        InventoryItemId = newItem.Id
+                    };
+
+                    _dbContext.Set<WarehouseInventoryItem>().Add(warehouseInventoryItem);
+                    await _dbContext.SaveChangesAsync();
+
+                    return Ok(new
+                    {
+                        Result = "New Item Added Successfully"
+                    });
                 }
-
-                var createdItem = await _inventoryService.CreateInventoryItemAsync(inventoryItem);
-
-                return CreatedAtAction(nameof(GetInventoryItem), new { id = createdItem.Id }, createdItem);
+                catch (Exception ex)
+                {
+                    // Log exception
+                    return StatusCode(500, $"Internal server error: {ex.Message}");
+                }
             }
 
-            return BadRequest(ModelState);
+            return BadRequest(new { Result = "Failed to add new item" });
         }
+
 
         private string GetCurrentTenantId()
         {

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\SoftBeatsTask\\InventoryManagementAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\helper\\defaultinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\helper\\defaultinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\dtos\\inventoryitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\dtos\\inventoryitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\dtos\\inventoryitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\dtos\\inventoryitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\models\\warehouseinventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\models\\warehouseinventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\services\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\services\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +43,16 @@
       "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\models\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\models\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\helper\\defaultinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\helper\\defaultinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\dtos\\dashboardcountsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\dtos\\dashboardcountsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,6 +77,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|d:\\softbeatstask\\inventorymanagementapi\\inventorymanagementapi\\migrations\\20240718194738_initial-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C4C6FF-891E-41DB-913B-E838AC9FD806}|InventoryManagementAPI\\InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi\\migrations\\20240718194738_initial-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,49 +90,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Tenant.cs",
-              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\Tenant.cs",
-              "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\Tenant.cs",
-              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\Tenant.cs",
-              "RelativeToolTip": "InventoryManagementAPI\\Models\\Tenant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T11:56:41.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InventoryItem.cs",
-              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\InventoryItem.cs",
-              "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\InventoryItem.cs",
-              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\InventoryItem.cs",
-              "RelativeToolTip": "InventoryManagementAPI\\Models\\InventoryItem.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T17:54:29.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "InventoryItemDto.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\DTOs\\InventoryItemDto.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\DTOs\\InventoryItemDto.cs",
               "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\DTOs\\InventoryItemDto.cs",
               "RelativeToolTip": "InventoryManagementAPI\\DTOs\\InventoryItemDto.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA3wBcAAAAOAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvw0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T06:07:12.963Z",
+              "WhenOpened": "2024-07-18T18:46:11.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T18:33:57.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Controllers\\InventoryController.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Controllers\\InventoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T06:01:05.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WarehouseController.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\WarehouseController.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Controllers\\WarehouseController.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\WarehouseController.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Controllers\\WarehouseController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAuwBoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T06:09:00.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WarehouseInventoryItem.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\WarehouseInventoryItem.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\WarehouseInventoryItem.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\WarehouseInventoryItem.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Models\\WarehouseInventoryItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T18:41:22.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Program.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Program.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Program.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvyQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T18:10:34.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240718194738_initial-db.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Migrations\\20240718194738_initial-db.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Migrations\\20240718194738_initial-db.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Migrations\\20240718194738_initial-db.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Migrations\\20240718194738_initial-db.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T19:47:38.6Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "IWarehouseService.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Services\\IWarehouseService.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Services\\IWarehouseService.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Services\\IWarehouseService.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Services\\IWarehouseService.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAADgv2gAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T19:08:08.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Warehouse.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\Warehouse.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\Warehouse.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\Warehouse.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Models\\Warehouse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:59:23.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\Controllers\\AuthController.cs",
@@ -124,7 +215,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\InventoryItem.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\InventoryItem.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Models\\InventoryItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T18:15:05.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "DefaultInitializer.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Helper\\DefaultInitializer.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\Helper\\DefaultInitializer.cs",
@@ -132,63 +235,35 @@
               "RelativeToolTip": "InventoryManagementAPI\\Helper\\DefaultInitializer.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAiwDAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T05:20:41.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T05:20:41.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InventoryController.cs",
-              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\InventoryController.cs",
-              "RelativeDocumentMoniker": "InventoryManagementAPI\\Controllers\\InventoryController.cs",
-              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\InventoryController.cs",
-              "RelativeToolTip": "InventoryManagementAPI\\Controllers\\InventoryController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAMwE8AAAA1AAAA",
+              "DocumentIndex": 12,
+              "Title": "DashboardCountsDto.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\DTOs\\DashboardCountsDto.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\DTOs\\DashboardCountsDto.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\DTOs\\DashboardCountsDto.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\DTOs\\DashboardCountsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T06:01:05.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-15T03:46:24.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WarehouseController.cs",
-              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\WarehouseController.cs",
-              "RelativeDocumentMoniker": "InventoryManagementAPI\\Controllers\\WarehouseController.cs",
-              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\WarehouseController.cs",
-              "RelativeToolTip": "InventoryManagementAPI\\Controllers\\WarehouseController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAmwBwAAAAIAAAA",
+              "DocumentIndex": 11,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "InventoryManagementAPI\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "InventoryManagementAPI\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T06:09:00.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-15T03:48:43.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Warehouse.cs",
-              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\Warehouse.cs",
-              "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\Warehouse.cs",
-              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\Warehouse.cs",
-              "RelativeToolTip": "InventoryManagementAPI\\Models\\Warehouse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:59:23.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Program.cs",
-              "RelativeDocumentMoniker": "InventoryManagementAPI\\Program.cs",
-              "ToolTip": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Program.cs",
-              "RelativeToolTip": "InventoryManagementAPI\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAowEgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T18:10:34.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\DTOs\\RegisterDto.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\DTOs\\RegisterDto.cs",
@@ -200,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\AutoMapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\AutoMapper\\MappingProfile.cs",
@@ -212,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\Models\\ApplicationUser.cs",
@@ -224,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\appsettings.json",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\appsettings.json",
@@ -236,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "20240714054435_initial-db.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Migrations\\20240714054435_initial-db.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\Migrations\\20240714054435_initial-db.cs",
@@ -248,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "20240714051418_initialMigration.cs",
               "DocumentMoniker": "D:\\SoftBeatsTask\\InventoryManagementAPI\\InventoryManagementAPI\\Migrations\\20240714051418_initialMigration.cs",
               "RelativeDocumentMoniker": "InventoryManagementAPI\\Migrations\\20240714051418_initialMigration.cs",

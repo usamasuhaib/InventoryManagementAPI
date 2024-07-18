@@ -82,18 +82,32 @@ namespace InventoryManagementAPI.Services
         public async Task AssociateInventoryItemWithWarehouseAsync(int warehouseId, int inventoryItemId)
         {
             var tenantId = GetTenantId();
-            var warehouse = await _context.Warehouses.FirstOrDefaultAsync(w => w.Id == warehouseId && w.TenantId == tenantId);
-            var inventoryItem = await _context.InventoryItems.FirstOrDefaultAsync(i => i.Id == inventoryItemId && i.TenantId == tenantId);
+
+            // Fetch the warehouse and inventory item for the specified tenant
+            var warehouse = await _context.Warehouses
+                .FirstOrDefaultAsync(w => w.Id == warehouseId && w.TenantId == tenantId);
+            var inventoryItem = await _context.InventoryItems
+                .FirstOrDefaultAsync(i => i.Id == inventoryItemId && i.TenantId == tenantId);
 
             if (warehouse == null || inventoryItem == null)
-                return;
+            {
+                // Handle the case where either the warehouse or inventory item is not found
+                throw new InvalidOperationException("Warehouse or Inventory Item not found for the specified tenant.");
+            }
 
-            if (warehouse.InventoryItems == null)
-                warehouse.InventoryItems = new List<InventoryItem>();
+            // Create a new entry in the junction table
+            var warehouseInventoryItem = new WarehouseInventoryItem
+            {
+                WarehouseId = warehouseId,
+                InventoryItemId = inventoryItemId
+            };
 
-            warehouse.InventoryItems.Add(inventoryItem);
+            // Add the entry to the context
+            _context.Set<WarehouseInventoryItem>().Add(warehouseInventoryItem);
 
+            // Save the changes to the database
             await _context.SaveChangesAsync();
         }
+
     }
 }
