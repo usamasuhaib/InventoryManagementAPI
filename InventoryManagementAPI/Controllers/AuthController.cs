@@ -87,7 +87,6 @@ namespace InventoryManagementAPI.Controllers
             var jwtTokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
 
-            // Get user roles from UserManager
             var roles = await _userManager.GetRolesAsync(user);
 
             var tenantName = await _dbContext.Tenants
@@ -95,10 +94,8 @@ namespace InventoryManagementAPI.Controllers
             .Select(t => t.Name)
             .FirstOrDefaultAsync();
 
-            // Define claims for the JWT token
             var claims = new List<Claim>
             {
-                //new Claim("Id", user.Id),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
                 new Claim(JwtRegisteredClaimNames.Name, user.FullName),
                 new Claim(JwtRegisteredClaimNames.Sub, user.Id),
@@ -109,7 +106,6 @@ namespace InventoryManagementAPI.Controllers
                 new Claim(JwtRegisteredClaimNames.Iat, DateTime.Now.ToUniversalTime().ToString())
             };
 
-            // Add user roles as claims (if any)
             if (roles != null && roles.Any())
             {
                 foreach (var role in roles)
@@ -120,7 +116,6 @@ namespace InventoryManagementAPI.Controllers
 
 
 
-            // Create a token descriptor with the defined claims
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
@@ -130,7 +125,6 @@ namespace InventoryManagementAPI.Controllers
 
 
 
-            // Generate and serialize the JWT token
             var token = jwtTokenHandler.CreateToken(tokenDescriptor);
             var jwtToken = jwtTokenHandler.WriteToken(token);
 

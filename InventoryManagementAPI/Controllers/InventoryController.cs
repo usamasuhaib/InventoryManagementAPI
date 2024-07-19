@@ -54,7 +54,6 @@ namespace InventoryManagementAPI.Controllers
             }
             catch (Exception ex)
             {
-                // Optionally log the exception
                 return StatusCode(500, "Internal server error");
             }
         }
@@ -80,8 +79,6 @@ namespace InventoryManagementAPI.Controllers
 
             return Ok(item);
         }
-
-
 
 
         [HttpPost("CreateInventoryItem")]
@@ -164,7 +161,6 @@ namespace InventoryManagementAPI.Controllers
             }
             
 
-            // Fetch the inventory item
             var existingItem = await _dbContext.InventoryItems
                 .FirstOrDefaultAsync(i => i.Id == id && i.TenantId == tenantId);
 
@@ -173,7 +169,6 @@ namespace InventoryManagementAPI.Controllers
                 return NotFound();
             }
 
-            // Update the item properties
             existingItem.Name = inventoryItemDto.Name;
             existingItem.Description = inventoryItemDto.Description;
             existingItem.Price = inventoryItemDto.Price;
