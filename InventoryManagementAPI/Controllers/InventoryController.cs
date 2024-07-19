@@ -151,19 +151,41 @@ namespace InventoryManagementAPI.Controllers
         }
 
 
-        [HttpPut("{id}")]
         [Authorize(Policy = "AdminOnly")]
-        public async Task<IActionResult> UpdateInventoryItem(int id, InventoryItem item)
+
+        [HttpPut("UpdateInventory/{id}")]
+        public async Task<IActionResult> UpdateInventoryItem(int id, [FromBody] InventoryItemDto inventoryItemDto)
         {
-            if (id != item.Id)
-                return BadRequest();
+            var tenantId = Request.Headers["TenantId"].ToString();
 
-            var updatedItem = await _inventoryService.UpdateInventoryItemAsync(item);
-            if (updatedItem == null)
+            if (string.IsNullOrEmpty(tenantId))
+            {
+                return BadRequest("Tenant ID is missing");
+            }
+            
+
+            // Fetch the inventory item
+            var existingItem = await _dbContext.InventoryItems
+                .FirstOrDefaultAsync(i => i.Id == id && i.TenantId == tenantId);
+
+            if (existingItem == null)
+            {
                 return NotFound();
+            }
 
-            return NoContent();
+            // Update the item properties
+            existingItem.Name = inventoryItemDto.Name;
+            existingItem.Description = inventoryItemDto.Description;
+            existingItem.Price = inventoryItemDto.Price;
+            existingItem.Quantity = inventoryItemDto.Quantity;
+            existingItem.Category = inventoryItemDto.Category;
+
+            // Save changes to the database
+            await _dbContext.SaveChangesAsync();
+
+            return Ok(existingItem);
         }
+
 
 
         [HttpDelete("DeleteInventoryItem/{id}")]
