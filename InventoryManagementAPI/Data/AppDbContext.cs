@@ -73,7 +73,7 @@ namespace InventoryManagementAPI.Data
 
             builder.Entity<WarehouseInventoryItem>()
         .HasKey(wi => new { wi.WarehouseId, wi.InventoryItemId });
-
+            
             builder.Entity<WarehouseInventoryItem>()
                 .HasOne(wi => wi.Warehouse)
                 .WithMany(w => w.WarehouseInventoryItems)

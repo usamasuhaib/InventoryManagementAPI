@@ -60,12 +60,24 @@ namespace InventoryManagementAPI.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<InventoryItem>> GetInventoryItem(int id)
+        [HttpGet("GetInventoryItemById/{id}")]
+        public async Task<ActionResult<InventoryItem>> GetInventoryItemById(int id)
         {
-            var item = await _inventoryService.GetInventoryItemByIdAsync(id);
+            var tenantId = Request.Headers["TenantId"].ToString();
+
+            if (string.IsNullOrEmpty(tenantId))
+            {
+                return BadRequest("Tenant ID is missing");
+            }
+
+            var item = await _dbContext.InventoryItems
+                .FirstOrDefaultAsync(i => i.Id == id && i.TenantId == tenantId);
+
             if (item == null)
+            {
                 return NotFound();
+            }
+
             return Ok(item);
         }
 
@@ -153,15 +165,31 @@ namespace InventoryManagementAPI.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
-        [Authorize(Policy = "AdminOnly")]
+
+        [HttpDelete("DeleteInventoryItem/{id}")]
         public async Task<IActionResult> DeleteInventoryItem(int id)
         {
-            var success = await _inventoryService.DeleteInventoryItemAsync(id);
-            if (!success)
-                return NotFound();
+            var tenantId = Request.Headers["TenantId"].ToString();
 
-            return NoContent();
+            if (string.IsNullOrEmpty(tenantId))
+            {
+                return BadRequest("Tenant ID is missing");
+            }
+
+            var item = await _dbContext.InventoryItems
+                .FirstOrDefaultAsync(i => i.Id == id && i.TenantId == tenantId);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            _dbContext.InventoryItems.Remove(item);
+
+      
+            await _dbContext.SaveChangesAsync();
+
+            return NoContent(); 
         }
 
         [HttpGet("category/{category}")]
